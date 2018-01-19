@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar e-mail com anexo</title>
+</head>
+<body>
+<form id="form1" name="form1" method="post" action="email.php?acao=enviar" enctype="multipart/form-data">
+   <table width="500" border="0" align="center" cellpadding="0" cellspacing="2">
+  <tr>
+  <input type="radio" name="tipo" value="contato"> Contato<br>
+  <input type="radio" name="tipo" value="trabalhe aqui"> Trabalhe<br>
+</tr>
+   <tr>
+     <td align="right">Necessidades/Área de Interesse:</td>
+     <td><input type="text" name="area" id="area" /></td>
+   </tr>
+   <tr>
+     <td align="right">Nome:</td>
+     <td><input type="text" name="nome" id="nome" /></td>
+   </tr>
+   <tr>
+     <td align="right">Email:</td>
+     <td><input type="text" name="email" id="email" /></td>
+   </tr>
+   <tr>
+     <td align="right">Telefone:</td>
+     <td><input type="text" name="telefone" id="telefone" /></td>
+   </tr>
+   <tr>
+     <td align="right">Site/Porfolio:</td>
+     <td><input type="text" name="site" id="site" /></td>
+   </tr>
+   <tr>
+     <td align="right">LinkedIn/Facebook/Outros:</td>
+     <td><input type="text" name="social" id="social" /></td>
+   </tr>
+   <tr>
+     <td align="right">Mensagem:</td>
+     <td><textarea name="mensagem" id="mensagem" cols="45" rows="5"></textarea></td>
+   </tr>
+   <tr>
+     <td align="right">Anexo:</td>
+     <td><input type="file" id="arquivo" name="arquivo" /></td>
+   </tr>
+   <tr>
+     <td colspan="2" align="center"><input type="submit" value="Enviar" /></td>
+   </tr>
+   </table>
+</form>
+</body>
+</html>
